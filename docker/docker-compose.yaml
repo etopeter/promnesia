@@ -4,7 +4,7 @@ services:
   server:
     image: promnesia
     build:
-      context: ./
+      context: ../
       dockerfile: docker/Dockerfile
     # Uncomment to enable persisent volumes
     #volumes:
@@ -15,7 +15,7 @@ services:
   indexer:
     image: promnesia-indexer
     build:
-      context: ./
+      context: ../
       dockerfile: docker/Dockerfile-indexer
     # Uncomment to enable persisent volumes
     # create config.py inside ./data
